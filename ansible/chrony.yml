@@ -1,0 +1,6 @@
+---
+- hosts: kworker01
+  become: yes
+  tasks:
+  #- service: name=chronyd state=stopped enabled=false
+  - apt: name=chrony state=absent

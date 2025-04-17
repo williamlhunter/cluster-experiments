@@ -1,0 +1,13 @@
+---
+- hosts: workers
+  become: yes
+  tasks:
+  - name: update[grade]
+    apt:
+      update_cache: yes
+      upgrade: full
+    register: updates
+
+  - name: reboot
+    ansible.builtin.reboot:
+    when: updates.changed
