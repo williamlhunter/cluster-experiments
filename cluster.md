@@ -1,9 +1,7 @@
 #cluster
 ##load balancing
- - Learn to make docker containers
-   * hello-go
  - write simple webservice
-   * takes in number
+   * takes in number or string
    * does something computationally expensive (bcrypt?)
    * returns result
  - containerize webservice
@@ -11,3 +9,6 @@
  - load test
    * scalability
    * high availability
+##Done
+ - Learn to make docker containers
+   * hello-go

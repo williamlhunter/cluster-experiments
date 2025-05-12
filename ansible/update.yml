@@ -2,6 +2,11 @@
 - hosts: workers
   become: yes
   tasks:
+  - name: vim default
+    apt:
+      name: vim
+      state: present
+
   - name: update[grade]
     apt:
       update_cache: yes
